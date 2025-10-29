@@ -1,0 +1,180 @@
+body {
+    margin: 5px;
+    background-image: url(/asset/img/Les-formations-devenir-developpeur-application-mobile-LE.avif);
+    background-size: contain;
+}
+
+.nav-burger {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.logo {
+    margin-left: 5px;
+}
+
+header nav>.burger:hover .nav-burger {
+    display: block;
+    justify-content: center;
+
+}
+
+header {
+    padding: 8px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5d16cf;
+    border: solid;
+    border-radius: 10em;
+    font-family: "honk";
+    font-size: 1.5em;
+}
+
+header div img {
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+header nav ul {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header a {
+    display: flex;
+    color: #333;
+    transition: all 1s ease-out;
+}
+
+header a:hover,
+header a:focus {
+    display: flex;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 20em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#home {
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px rgb(87, 3, 87);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: "Nosifer";
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Nosifer";
+    letter-spacing: 3px;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    background-color: #5d16cf;
+    border: solid;
+    border-radius: 15em;
+    height: fit-content;
+    font-family: 'Courier New';
+}
+
+#footer .article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer .article-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.haut {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.article-container a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media screen and (max-width:768px) {
+    
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 1px;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .nav-burger {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header nav>.burger:hover .nav-burger {
+        display: block;
+
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home .article-container {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,328 @@
+body {
+    margin: 5px;
+    background-color: darkgray;
+
+}
+
+.nav-burger {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.logo{
+    margin-left: 5px;
+}
+
+header nav>.burger:hover .nav-burger {
+    display: block;
+    justify-content: center;
+
+}
+
+
+header {
+    padding: 8px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    font-family: "Honk";
+    font-size: 1.5em;
+    border: solid;
+    border-radius: 10em;
+}
+
+header div img {
+    border: 1px solid white;
+    border-radius: 15%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+header nav ul {
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    font-family: "Nosifer";
+    font-size: 2em;
+}
+h2{
+    font-family: "Nosifer";
+}
+
+.title {
+    text-align: center;
+    font-family: "Sriracha";
+}
+
+.global img {
+
+    border: solid black;
+    border-radius: 15%;
+
+}
+
+.dev-web img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.dev-web {
+    width: 40%;
+}
+
+#home {
+    color: black;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+#home .article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    background-color: rgb(158, 6, 158);
+    width: 80%;
+    border: solid black;
+    font-family: "Sriracha";
+    font-size: 13px;
+
+
+}
+
+.html-css img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.html-css {
+    margin: 5%;
+    width: 90%;
+}
+
+
+.html-simple img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.html-simple {
+    margin: 5%;
+    width: 90%;
+}
+
+#top {
+    color: black;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#top .article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(158, 6, 158);
+    width: 60%;
+    border: solid black;
+    font-family: "Sriracha";
+
+}
+
+#exemple {
+    color: black;
+    margin: 20px;
+}
+
+#exemple .article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(158, 6, 158);
+    width: 100%;
+    border: solid black;
+    font-family: "Sriracha";
+}
+
+span {
+    font-weight: bold;
+}
+
+#back {
+    color: black;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#back .article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(158, 6, 158);
+    width: 60%;
+    border: solid black;
+    font-family: "Sriracha";
+
+}
+
+#footer {
+    background-color: rgb(158, 6, 158);
+    border: solid;
+    border-radius: 15em;
+    height: fit-content;
+    font-family: 'Courier New';
+}
+
+#footer .article-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer .article-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.haut {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.article-container a {
+    text-decoration: none;
+    color: black;
+}
+
+header a {
+    display: flex;
+    color: #333;
+    transition: all 1s ease-out;
+}
+
+header a:hover,
+header a:focus {
+    display: flex;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 20em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .nav-burger {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    header nav>.burger:hover .nav-burger {
+        display: block;
+
+    }
+
+
+    .global img {
+        margin-left: 25%;
+
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    #home .article-container {
+        width: 100%;
+    }
+
+
+
+
+    #top {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #top .article-container {
+        width: 100%;
+    }
+
+    #back {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #back .article-container {
+        width: 100%;
+    }
+
+    .dev-web img {
+        margin: 25%;
+        width: 200%;
+    }
+
+    #exemple {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #exemple .article-container {
+        width: 100%;
+    }
+}
