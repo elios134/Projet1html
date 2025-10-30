@@ -1,38 +1,21 @@
 body {
     margin: 5px;
-    background-color:lightgrey;
-
-}
-
-.nav-burger {
-    display: none;
-
+    position: relative;
+    padding-bottom: 15em;
 }
 
 .burger {
-    display: none;
-
-
-}
-
-header nav>.burger:hover .nav-burger {
-    display: block;
-    justify-content: center;
-
-
-}
-
-header {
     padding: 8px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: orangered;
-    font-family: "Honk";
-    font-size: 1.5em;
+    background-color: #ff7037;
+    ;
     border: solid;
     border-radius: 10em;
+    font-family: "Honk";
+    font-size: 1.5em;
 }
 
 header div img {
@@ -57,6 +40,22 @@ header nav ul a {
     text-decoration: none;
     color: black;
 
+}
+
+header a {
+    display: flex;
+    color: white;
+    transition: all 1s ease-out;
+}
+
+header a:hover,
+header a:focus {
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 h1 {
@@ -93,14 +92,14 @@ h2 {
     width: 60%;
     border: solid black;
     font-family: "Sriracha";
-    font-size: 13px;
 
 }
+
 .global img {
     width: 90%;
     height: 100%;
     border: solid black;
-   border-radius: 5em;
+    border-radius: 5em;
 }
 
 .global {
@@ -112,7 +111,7 @@ h2 {
     margin: 20px;
     gap: 10px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 
 }
 
@@ -125,14 +124,12 @@ h2 {
     width: 60%;
     border: solid black;
     font-family: "Sriracha";
-    font-size: 13px;
-
 }
 
 #back {
     color: black;
     margin: 20px;
-    gap:10px;
+    gap: 10px;
     display: flex;
     justify-content: space-between;
 
@@ -145,6 +142,7 @@ h2 {
     justify-content: space-between;
 
 }
+
 #middle .article-container {
     display: flex;
     align-items: center;
@@ -171,6 +169,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 60%;
     background-color: #ff7037;
     border: solid black;
     font-family: "Sriracha";
@@ -180,11 +179,11 @@ h2 {
     width: 100%;
     height: 100%;
     border: solid black;
-   border-radius: 5em;
+    border-radius: 5em;
 }
 
 .dev-web {
-    width:35%;
+    width: 35%;
 }
 
 .exemple img {
@@ -220,6 +219,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     text-align: start;
+    width: 60%;
     background-color: #ff7037;
     border: solid black;
     font-family: "Sriracha";
@@ -230,13 +230,18 @@ h2 {
 
 
 
-#footer {
+footer {
     background-color: orangered;
     border: solid;
     border-radius: 15em;
     height: fit-content;
     font-family: 'Courier New';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 
 #footer .article-container {
     display: flex;
@@ -263,60 +268,26 @@ h2 {
     color: black;
 }
 
-header a {
-    display: flex;
-    color: white;
-    transition: all 1s ease-out;
-}
-
-header a:hover,
-header a:focus {
-    display: flex;
-    background-color: white;
-    padding: 5px;
-    border-radius: 20em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-
-
-
-
-
 @media screen and (max-width:768px) {
-    header {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .burger {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 1px;
-    }
-
-    header nav ul {
-        display: none;
-        flex-direction: column;
-
-    }
-
-    .logo img {
-        display: none;
-    }
-
-    .nav-burger {
-        display: none;
-
-    }
-
-    .burger {
-        display: block;
     }
 
     header nav>.burger:hover .nav-burger {
         display: block;
 
+    }
 
-
+    header nav>.burger:hover .nav-burger {
+        display: block;
     }
 
     .title {
@@ -354,7 +325,7 @@ header a:focus {
 
 
 
-     #middle {
+    #middle {
         display: flex;
         flex-direction: column-reverse;
     }

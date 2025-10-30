@@ -1,39 +1,21 @@
 body {
     margin: 5px;
-    background-color: darkgray;
-
-}
-
-.nav-burger {
-    display: none;
+    
+    position: relative;
+    padding-bottom: 15em;
 }
 
 .burger {
-    display: none;
-}
-
-.logo{
-    margin-left: 5px;
-}
-
-header nav>.burger:hover .nav-burger {
-    display: block;
-    justify-content: center;
-
-}
-
-
-header {
     padding: 8px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: purple;
-    font-family: "Honk";
-    font-size: 1.5em;
     border: solid;
     border-radius: 10em;
+    font-family: "Honk";
+    font-size: 1.5em;
 }
 
 header div img {
@@ -63,7 +45,8 @@ h1 {
     font-family: "Nosifer";
     font-size: 2em;
 }
-h2{
+
+h2 {
     font-family: "Nosifer";
 }
 
@@ -108,9 +91,6 @@ h2{
     width: 80%;
     border: solid black;
     font-family: "Sriracha";
-    font-size: 13px;
-
-
 }
 
 .html-css img {
@@ -128,7 +108,6 @@ h2{
 .html-simple img {
     width: 100%;
     height: 100%;
-
 }
 
 .html-simple {
@@ -141,7 +120,6 @@ h2{
     margin: 20px;
     display: flex;
     justify-content: space-between;
-
 }
 
 #top .article-container {
@@ -194,12 +172,16 @@ span {
 
 }
 
-#footer {
+footer {
     background-color: rgb(158, 6, 158);
     border: solid;
     border-radius: 15em;
     height: fit-content;
     font-family: 'Courier New';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #footer .article-container {
@@ -244,29 +226,16 @@ header a:focus {
 }
 
 @media screen and (max-width:768px) {
-    header {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-    }
-
     header nav ul {
         display: none;
         flex-direction: column;
     }
 
-    .logo img {
-        display: none;
-    }
-
-    .nav-burger {
-        display: none;
-    }
-
     .burger {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     header nav>.burger:hover .nav-burger {

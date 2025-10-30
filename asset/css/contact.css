@@ -4,25 +4,7 @@ body {
     background-size: contain;
 }
 
-.nav-burger {
-    display: none;
-}
-
 .burger {
-    display: none;
-}
-
-.logo {
-    margin-left: 5px;
-}
-
-header nav>.burger:hover .nav-burger {
-    display: block;
-    justify-content: center;
-
-}
-
-header {
     padding: 8px;
     margin: auto;
     display: flex;
@@ -31,7 +13,7 @@ header {
     background-color: #5d16cf;
     border: solid;
     border-radius: 10em;
-    font-family: "honk";
+    font-family: "Honk";
     font-size: 1.5em;
 }
 
@@ -101,15 +83,20 @@ h2 {
     align-items: center;
 }
 
-#footer {
+footer {
     background-color: #5d16cf;
     border: solid;
     border-radius: 15em;
     height: fit-content;
     font-family: 'Courier New';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
 }
 
-#footer .article-container {
+
+.article-container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -137,30 +124,16 @@ h2 {
 
 
 @media screen and (max-width:768px) {
-    
-    header {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        padding: 1px;
-    }
-
     header nav ul {
         display: none;
         flex-direction: column;
     }
 
-    .logo img {
-        display: none;
-    }
-
-    .nav-burger {
-        display: none;
-    }
-
     .burger {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     header nav>.burger:hover .nav-burger {
